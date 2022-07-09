@@ -19,15 +19,6 @@ module.exports = {
     requireConfigFile: false,
     allowImportExportEverywhere: false,
   },
-  extends: ['airbnb'],
-  rules: {
-    'no-console': 1,
-    'import/extensions': [
-      2,
-      'always',
-      {
-        tsx: 'never',
-      },
-    ],
-  },
+  extends: ['airbnb-base'],
+  rules: {},
 }
