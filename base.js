@@ -25,4 +25,15 @@ module.exports = {
     'global-require': 0,
     'import/no-dynamic-require': 0,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx'],
+      },
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx'],
+      },
+    },
+  },
 }
