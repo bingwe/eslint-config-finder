@@ -12,5 +12,6 @@ module.exports = {
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/react-in-jsx-scope': 0,
   },
 }
