@@ -3,5 +3,7 @@ node_modules
 .eslintrc.js
 .gitignore
 .npmignore
+.npmrc
+.prettierignore
 .prettierrc.js
 package-lock.json
