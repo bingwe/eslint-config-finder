@@ -12,6 +12,7 @@ module.exports = {
   extends: ['plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   rules: {
+    // 引入模块配置是否需要写后缀
     'import/extensions': [
       'error',
       'ignorePackages',

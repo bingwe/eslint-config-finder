@@ -15,6 +15,7 @@ const filePaths = {
 // 去掉通配符
 const takeOutMatching = (str) => (str || '').replace(/\/\*.*/, '')
 
+// 通过tsconfig.json或者jsconfig.json去查找别名
 function getAliasMap() {
   // 是否存在js/ts配置文件
   const hasTsConfig = fs.existsSync(filePaths.appTsConfig)
@@ -77,16 +78,23 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
+      // 全局不允许有返回值
       globalReturn: false,
+      // 开启全局script模式
       impliedStrict: true,
       jsx: true,
     },
+    // 即使没有 babelrc 配置文件，也使用 @babel/eslint-parser 来解析
     requireConfigFile: false,
+    // 仅允许 import export 语句出现在模块的顶层
     allowImportExportEverywhere: false,
   },
+  // 使用 eslint-config-airbnb-base 配置
   extends: ['airbnb-base'],
   rules: {
+    // 需要在顶层调用require
     'global-require': 0,
+    // 不能使用动态引入
     'import/no-dynamic-require': 0,
   },
   settings: {

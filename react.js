@@ -12,6 +12,7 @@ module.exports = {
   ],
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {
+    // 允许使用jsx的文件后缀
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
   },
 }
