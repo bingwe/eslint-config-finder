@@ -1,14 +1,25 @@
 {
-  "name": "eslint-config-radar",
-  "version": "1.0.3",
-  "description": "",
+  "name": "eslint-config-finder",
+  "version": "1.0.0",
+  "description": "自定义 Eslint 规则",
   "main": "index.js",
-  "scripts": {
-    "build": "tsc --build tsconfig.json"
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslintrc",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "react",
+    "typescript"
+  ],
+  "homepage": "https://github.com/bingwe/eslint-config-finder",
+  "author": "bingwe <bingwe.hu@icloud.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bingwe/eslint-config-finder.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/eslint-parser": "^7.18.2",
