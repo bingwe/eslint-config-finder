@@ -1,3 +1,4 @@
 {
+  // 推荐安装的扩展
   "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
 }
