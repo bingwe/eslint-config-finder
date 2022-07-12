@@ -140,7 +140,6 @@ import App from '@/App'
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    // 用于设置别名
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
